@@ -1,0 +1,122 @@
+#header {
+	background-color: #9999ff;
+}
+
+::-webkit-scrollbar {
+    width: .65em;
+    height: .65em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #9999ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(24, 116, 205);
+    border-radius: 5px;
+    box-shadow: inset 0.05em 0.05em 0 rgba(0, 0, 0, 0.1), inset 0 -0.05em 0 rgba(0, 0, 0, 0.07);
+}
+
+@media (max-width: 991px){
+	.onlyDesk {
+		display: none;
+	}
+	.onlyMob {
+		display: block;
+	}
+}
+
+@media (min-width: 992px){
+	.onlyDesk {
+		display: block;
+	}
+	.onlyMob {
+		display: none;
+	}
+}
+
+.contentMain {
+	margin: 3%;
+}
+
+td{
+	font-size: 8px;
+}
+
+.tableCalendar {
+	background-color: #cecef542;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border: 1px solid #dee2e6;
+	display: block;
+    min-width: 200px;
+}
+
+.tableCalendar td  {
+    padding: .15rem;
+}
+.tableCalendar th  {
+    border-top: none;
+}
+.colCalendSecond  {
+    width: 90%;
+}
+.colCalendFirst  {
+    width: 10%;
+}
+.colCalendSecond:hover  {
+    background-color: #dae6f5;
+    background-image: url("../img/plus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.colCalendSecond:hover .textCalendar{
+    color: #dae6f5;
+}
+.scrolling-wrapper-flexbox {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+
+.textCalendar {
+	padding: 0;
+	font-size: 8px;
+	width: 100%;
+	height: 100%;
+}
+
+
+.aModal {
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .7);
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal:target {
+  display: flex;
+}
+
+.salonSel, .masterSel {
+	cursor: pointer;
+}
+
+.divCalendTable {
+	height: 67px;
+	overflow: hidden;
+}
